@@ -67,9 +67,6 @@ The Token Bucket algorithm is a popular method for rate limiting and regulating 
   - <u><i>Request Delay or Denial:</i></u> if there are not enough tokens available, the request is either delayed or rejected, depending on the specific implementation.
 <div align="center">
   <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/token-bucket-rate-limiter.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
-=======
-  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/token-bucket-rate-limiter.jpg" alt="Image" style="display:block; margin:auto;">
->>>>>>> origin/main
 </div>
 
 #### Pros:
