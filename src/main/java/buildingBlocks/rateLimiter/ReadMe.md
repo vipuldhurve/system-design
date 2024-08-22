@@ -32,7 +32,7 @@ In the case of auto-scaling resources on a pay-per-use model, rate limiting puts
 ### 1. Leaky Bucket
 Leaky bucket is a simple, intuitive algorithm. It creates a queue with a finite capacity. All requests in a given time frame beyond the capacity of the queue are spilled off.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/leaky-bucket-rate-limiter.jpg" alt="Image" style="display:block; width:40%; height:auto; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/leaky-bucket-rate-limiter.jpg" alt="Image" style="display:block; width:40%; height:auto; margin:auto;">
 </div>
 
 #### Pros:
@@ -59,7 +59,7 @@ The token bucket algorithm is similar to leaky bucket, but instead, we assign to
 ### 3. Fixed Window Counter
 Fixed window is one of the most basic rate limiting mechanisms. We keep a counter for a given duration of time and continue incrementing it for every request we get. Once the limit is reached, we drop all further requests until the time duration is reset.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/fixed-window-rate-limiter.jpg" alt="Image" style="display:block; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/fixed-window-rate-limiter.jpg" alt="Image" style="display:block; margin:auto;">
 </div>
 
 #### Pros:
