@@ -41,7 +41,7 @@ Leaky bucket is a simple, intuitive algorithm. It creates a queue with a finite 
   - <u><i>Request Delay or Denial:</i></u> if the bucket is already full, the incoming data is discarded or subjected to a specific handling policy (e.g., dropped or queued).
 - <u><i>Bucket leak:</i></u> The bucket continuously “leaks” or drains at a fixed rate. This means that the data in the bucket is continuously being processed or transmitted, ensuring adherence to the desired rate limit. It is usually implemented with a first-in-first-out (FIFO) queue.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/leaky-bucket-rate-limiting.jpg" alt="Image" style="display:block; width:40%; height:auto; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/leaky-bucket-rate-limiting.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
 </div>
 
 #### Pros:
