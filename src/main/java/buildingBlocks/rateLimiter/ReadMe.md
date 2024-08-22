@@ -5,7 +5,7 @@ A rate limiter is a defensive mechanism used in a distributed system to prevent 
 - Rate limiting protects your APIs from unintended or malicious overuse by limiting the number of requests that can reach your API in a given period of time. 
 - Without rate limiting, any user can bombard your server with requests leading to spikes that starve other users i.e. risking resource starvation from load-based denial of service attacks, security failures and increased operational costs.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/system-design/assets/rate-limiter.png" alt="Image" style="display:block; width:70%; height:auto; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/assets/rate-limiter.png" alt="Image" style="display:block; width:70%; height:auto; margin:auto;">
 </div>
 
 <br><br>
