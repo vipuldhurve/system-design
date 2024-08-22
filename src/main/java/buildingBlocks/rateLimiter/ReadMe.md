@@ -142,4 +142,4 @@ Race conditions happen in a get-then-set approach with high concurrency. Each re
 
 <br><br>
 #### #Resource: [rate-limiter by builtin.com](https://builtin.com/software-engineering-perspectives/rate-limiter)
-#### #Resiurce: [rate-limiter](https://medium.com/@abhirup.acharya009/all-you-need-to-know-about-rate-limiting-an-eagles-view-part-1-fc3eb441c00c)
+#### #Resource: [rate-limiter](https://medium.com/@abhirup.acharya009/all-you-need-to-know-about-rate-limiting-an-eagles-view-part-1-fc3eb441c00c)
