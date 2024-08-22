@@ -2,7 +2,7 @@
 - In DBMS, Sharding is a type of DataBase partitioning in which a large database is divided or partitioned into smaller data and different nodes.
 - A single machine, or database server, can store and process only a limited amount of data. Sharding overcomes this limitation by splitting data into smaller chunks, called <b>shards</b>, and storing them across several database servers.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/sharding.png" alt="Image" style="display:block; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/sharding.png" alt="Image" style="display:block; margin:auto;">
 </div>
 
 ### Need for Sharding:
