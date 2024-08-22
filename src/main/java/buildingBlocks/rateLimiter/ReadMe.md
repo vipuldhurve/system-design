@@ -38,7 +38,7 @@ Leaky bucket is a simple, intuitive algorithm. It creates a queue with a finite 
 - <b><i>Bucket Initialization:</i></b> Imagine a bucket with a fixed capacity, representing the maximum amount of data that can be transmitted or stored in a given time period.
 - <b><i>Rate limit enforcement:</i></b> 
   - <u><i>Accept Request:</i></u> As data or requests arrive, they are added to the bucket.
-  - <u><i>Request Delay or Denial:</i></u> if the bucket is already full, the incoming data is discarded or subjected to a specific handling policy (e.g., dropped or queued).
+  - <u><i>Request Delay or Denial:</i></u> If the bucket is already full, the incoming data is discarded or subjected to a specific handling policy (e.g., dropped or queued).
 - <u><i>Bucket leak:</i></u> The bucket continuously “leaks” or drains at a fixed rate. This means that the data in the bucket is continuously being processed or transmitted, ensuring adherence to the desired rate limit. It is usually implemented with a first-in-first-out (FIFO) queue.
 <div align="center">
   <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/leaky-bucket-rate-limiting.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
@@ -64,7 +64,7 @@ The Token Bucket algorithm is a popular method for rate limiting and regulating 
 - <b><i>Bucket refilling:</i></b> The token bucket refills at a fixed rate, adding tokens to the bucket over time. The refill rate determines how quickly the bucket replenishes its tokens.
 - <b><i>Rate limit enforcement:</i></b>
   - <u><i>Accept Request:</i></u> If a request arrives and there are sufficient tokens available in the bucket, it is allowed to proceed, and the tokens are consumed.
-  - <u><i>Request Delay or Denial:</i></u> if there are not enough tokens available, the request is either delayed or rejected, depending on the specific implementation.
+  - <u><i>Request Delay or Denial:</i></u> If there are not enough tokens available, the request is either delayed or rejected, depending on the specific implementation.
 <div align="center">
   <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/token-bucket-rate-limiter.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
 </div>
@@ -81,6 +81,13 @@ Fixed window is one of the most basic rate limiting mechanisms. We keep a counte
 <div align="center">
   <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/fixed-window-rate-limiter.jpg" alt="Image" style="display:block; margin:auto;">
 </div>
+
+- <b><i>Counter Initialization:</i></b> Start with a counter set to zero at the beginning of a fixed time window.
+- <b><i>Event Counting:</i></b> Each time an event occurs, the counter is incremented by one.
+- <b><i>Rate limit enforcement:</i></b>
+  - <u><i>Accept Request:</i></u> When a new event arrives, check the value of the counter. If the counter is below the predefined limit, the event is allowed to proceed, and the counter is incremented.
+  - <u><i>Request Delay or Denial:</i></u> If the counter is equal to or exceeds the limit, the event is blocked or limited in some way (e.g., dropped, delayed, or logged).
+- <u><i>Time Window Reset:</i></u> At the end of the fixed time window, the counter is reset back to zero, allowing a fresh count for the next time window.
 
 #### Pros:
 - The advantage is that it ensures that the most recent requests are served without being starved by old requests.
@@ -132,4 +139,7 @@ Race conditions happen in a get-then-set approach with high concurrency. Each re
 - <b><i>Hard throttling:</b></i> The number of API requests cannot exceed the throttle limit.
 - <b><i>Soft throttling:</b></i> In this type, we can set the API request limit to exceed a certain percentage. For example, if we have a rate limit of 100 messages a minute and a 10 percent exceed limit, our rate limiter will allow up to 110 messages per minute.
 - <b><i>Elastic or dynamic throttling:</b></i> Under elastic throttling, the number of requests can go beyond the threshold if the system has some resources available. For example, if a user is allowed only 100 messages a minute, we can let the user send more than 100 messages a minute when there are free resources available in the system.
+
+<br><br>
 #### #Resource: [rate-limiter by builtin.com](https://builtin.com/software-engineering-perspectives/rate-limiter)
+#### #Resiurce: [rate-limiter](https://medium.com/@abhirup.acharya009/all-you-need-to-know-about-rate-limiting-an-eagles-view-part-1-fc3eb441c00c)
