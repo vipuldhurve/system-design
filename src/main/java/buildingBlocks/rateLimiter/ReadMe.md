@@ -48,7 +48,7 @@ The token bucket algorithm is similar to leaky bucket, but instead, we assign to
 - <b><i>Fetch token:</i></b> The current number of tokens for that user is fetched. If it is greater than the limit defined, then the request is dropped.
 - <b><i>Update token:</i></b> If the fetched token is less than the limit for the time duration d, then the request is accepted and the token is appended.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/token-bucket-rate-limiter.jpg" alt="Image" style="display:block; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/token-bucket-rate-limiter.jpg" alt="Image" style="display:block; margin:auto;">
 </div>
 
 #### Pros:
