@@ -35,6 +35,15 @@ Leaky bucket is a simple, intuitive algorithm. It creates a queue with a finite 
   <img src="https://github.com/vipuldhurve/Code/blob/main/assets/leaky-bucket-rate-limiter.jpg" alt="Image" style="display:block; width:40%; height:auto; margin:auto;">
 </div>
 
+- <b><i>Bucket Initialization:</i></b> Imagine a bucket with a fixed capacity, representing the maximum amount of data that can be transmitted or stored in a given time period.
+- <b><i>Rate limit enforcement:</i></b> 
+  - <u><i>Accept Request:</i></u> As data or requests arrive, they are added to the bucket.
+  - <u><i>Request Delay or Denial:</i></u> if the bucket is already full, the incoming data is discarded or subjected to a specific handling policy (e.g., dropped or queued).
+- <u><i>Bucket leak:</i></u> The bucket continuously “leaks” or drains at a fixed rate. This means that the data in the bucket is continuously being processed or transmitted, ensuring adherence to the desired rate limit. It is usually implemented with a first-in-first-out (FIFO) queue.
+<div align="center">
+  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/leaky-bucket-rate-limiting.jpg" alt="Image" style="display:block; width:40%; height:auto; margin:auto;">
+</div>
+
 #### Pros:
 - It smoothes out bursts of requests and processes them at a constant rate. 
 - It’s also easy to implement on a load balancer and is memory efficient for each user. 
@@ -44,17 +53,27 @@ Leaky bucket is a simple, intuitive algorithm. It creates a queue with a finite 
 - It also provides no guarantee that requests get completed in a given amount of time.
 
 ### 2. Token Bucket
-The token bucket algorithm is similar to leaky bucket, but instead, we assign tokens on a user level. For a given time duration d, the number of request r packets that a user can receive is defined. Every time a new request arrives at a server, there are two operations that happen:
-- <b><i>Fetch token:</i></b> The current number of tokens for that user is fetched. If it is greater than the limit defined, then the request is dropped.
-- <b><i>Update token:</i></b> If the fetched token is less than the limit for the time duration d, then the request is accepted and the token is appended.
+The Token Bucket algorithm is a popular method for rate limiting and regulating the flow of requests or events in a system. It allows a system to handle bursts of activity while enforcing a specific rate limit over time. The algorithm operates based on the concept of a token bucket that replenishes tokens at a fixed rate.
+- <b><i>Token Bucket Initialization:</i></b> A token bucket is a container that has a pre-defined capacity. The capacity represents the maximum number of tokens the bucket can hold.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/token-bucket-rate-limiter.jpg" alt="Image" style="display:block; margin:auto;">
+  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/token-bucket-capacity.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
+</div>
+
+- <b><i>Token consumption:</i></b> Each request or event that arrives at the system needs to “consume” tokens from the bucket. The number of tokens consumed depends on the size or cost associated with the request.
+- <b><i>Bucket refilling:</i></b> The token bucket refills at a fixed rate, adding tokens to the bucket over time. The refill rate determines how quickly the bucket replenishes its tokens.
+- <b><i>Rate limit enforcement:</i></b>
+  - <u><i>Accept Request:</i></u> If a request arrives and there are sufficient tokens available in the bucket, it is allowed to proceed, and the tokens are consumed.
+  - <u><i>Request Delay or Denial:</i></u> if there are not enough tokens available, the request is either delayed or rejected, depending on the specific implementation.
+<div align="center">
+  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/token-bucket-rate-limiter.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
 </div>
 
 #### Pros:
-- This algorithm is memory efficient because we are saving less data per user for our application.
+- <u><i>Memory Efficient:</u></i> This algorithm is memory efficient because we are saving less data per user for our application.
+- <u><i>Flexible rate limiting:</u></i> It provides flexibility in setting different rate limits for different types of requests or events by adjusting the token consumption rate or token size.
 #### Cons:
-- The problem is that it can cause race conditions in a distributed environment. This happens when there are two requests from two different application servers trying to fetch the token at the same time.
+- <u><i>Race Conditions:</u></i> The problem is that it can cause race conditions in a distributed environment. This happens when there are two requests from two different application servers trying to fetch the token at the same time.
+- <u><i>Tuning:</u></i> Challenging to tune bucket size and token refill rate properly.
 
 ### 3. Fixed Window Counter
 Fixed window is one of the most basic rate limiting mechanisms. We keep a counter for a given duration of time and continue incrementing it for every request we get. Once the limit is reached, we drop all further requests until the time duration is reset.
