@@ -41,7 +41,7 @@ Leaky bucket is a simple, intuitive algorithm. It creates a queue with a finite 
   - <u><i>Request Delay or Denial:</i></u> if the bucket is already full, the incoming data is discarded or subjected to a specific handling policy (e.g., dropped or queued).
 - <u><i>Bucket leak:</i></u> The bucket continuously “leaks” or drains at a fixed rate. This means that the data in the bucket is continuously being processed or transmitted, ensuring adherence to the desired rate limit. It is usually implemented with a first-in-first-out (FIFO) queue.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/leaky-bucket-rate-limiting.jpg" alt="Image" style="display:block; width:40%; height:auto; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/leaky-bucket-rate-limiting.jpg" alt="Image" style="display:block; width:40%; height:auto; margin:auto;">
 </div>
 
 #### Pros:
@@ -57,7 +57,7 @@ The Token Bucket algorithm is a popular method for rate limiting and regulating 
 - <b><i>Token Bucket Initialization:</i></b> A token bucket is a container that has a pre-defined capacity. The capacity represents the maximum number of tokens the bucket can hold.
 <div align="center">
 <<<<<<< HEAD
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/token-bucket-capacity.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/token-bucket-capacity.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
 </div>
 
 - <b><i>Token consumption:</i></b> Each request or event that arrives at the system needs to “consume” tokens from the bucket. The number of tokens consumed depends on the size or cost associated with the request.
@@ -66,7 +66,7 @@ The Token Bucket algorithm is a popular method for rate limiting and regulating 
   - <u><i>Accept Request:</i></u> If a request arrives and there are sufficient tokens available in the bucket, it is allowed to proceed, and the tokens are consumed.
   - <u><i>Request Delay or Denial:</i></u> if there are not enough tokens available, the request is either delayed or rejected, depending on the specific implementation.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/token-bucket-rate-limiter.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/token-bucket-rate-limiter.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
 =======
   <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/token-bucket-rate-limiter.jpg" alt="Image" style="display:block; margin:auto;">
 >>>>>>> origin/main
