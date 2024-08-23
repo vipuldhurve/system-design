@@ -5,7 +5,7 @@ An <b><i>API(Application Programming interface)</i></b> is a set of rules and pr
 
 <br><br>
 ## REST API
-<b><i>REST(Representational State Transfer)</i></b> is an architectural style and design principle that defines how APIs should look and work, while RESTful APIs that adheres to the REST principles. It allows for communication between a client and a server over HTTP protocol, using HTTPS methods(such as GET, POST, OUT, DELETE) to perform CRUD operations on a resource.
+<b><i>REST(Representational State Transfer)</i></b> is an architectural style and design principle that defines how APIs should look and work, while RESTful APIs are APIs that adheres to the REST principles. It allows for communication between a client and a server over HTTP protocol, using HTTPS methods(such as GET, POST, OUT, DELETE) to perform CRUD operations on a resource.
 - The key abstraction is a <b><i>resource</i></b>. Everything in REST is treated as a resource.
 - Resources are typically identified by <b><i>URIs (Uniform Resource Identifiers)</b></i>, such as `/users/123` for accessing a user resource with ID 123.
 - Resources are represented in different formats, with JSON being the most common format for RESTful APIs
