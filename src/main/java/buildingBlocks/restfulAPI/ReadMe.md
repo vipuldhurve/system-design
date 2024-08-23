@@ -62,7 +62,7 @@ Versioning in RESTful APIs is crucial for maintaining backward compatibility whi
 <br><br>
 ## Principles of REST API
 <div align="center">
-  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/rest-api-principles.jpg" alt="Image" style="display:block; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/rest-api-principles.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
 </div>
 
 ### 1. Client Server Decoupling
