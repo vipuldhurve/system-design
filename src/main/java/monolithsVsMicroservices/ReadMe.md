@@ -14,6 +14,7 @@
 - <b><i>Inability to adapt to new technologies:</i></b> As mentioned before, monolith applications are tightly coupled. This also means it’s hard to bring in new technologies or web services without dismantling the entire app.
 - <b><i>High dependence between functionalities:</i></b> if one feature or functionality down, the others will go down with it. 
 
+<br><br>
 ## Microservices Architecture
 - Microservices approach creates a large application out of multiple, modular services (microservice or a service) that communicate with each other via API's.
 - Each service work on a specific business goal.
@@ -36,7 +37,7 @@
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">Monolith v/s Microservices</p>
 </div>
 
-
+<br><br>
 ## FAQs 
 
 #### Q. How microservices communicate with each other?
