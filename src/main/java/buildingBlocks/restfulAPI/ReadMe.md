@@ -10,7 +10,7 @@ An <b><i>API(Application Programming interface)</i></b> is a set of rules and pr
 - Resources are typically identified by <b><i>URIs (Uniform Resource Identifiers)</b></i>, such as `/users/123` for accessing a user resource with ID 123.
 - Resources are represented in different formats, with JSON being the most common format for RESTful APIs
 <div align="center">
-  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/restful-api.jpg" alt="Image" style="display:block; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/restful-api.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
 </div>
 
 ### HTTP Methods:
