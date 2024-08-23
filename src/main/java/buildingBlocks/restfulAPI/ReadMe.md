@@ -65,15 +65,15 @@ Versioning in RESTful APIs is crucial for maintaining backward compatibility whi
   <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/rest-api-principles.jpg" alt="Image" style="display:block; width:80%; height:auto; margin:auto;">
 </div>
 
-### 1. Client Server Decoupling
+### 1. Uniform Interface
+- RESTful APIs use a consistent and standard interface to interact with resources, making the API easy to understand and use. 
+- The uniform interface is typically based on standard HTTP methods like GET, POST, PUT, DELETE, etc.
+- All API requests for the same resource should look the same regardless of where they come from.
+
+### 2. Client Server Decoupling
 - REST separates the user interface (client) from the data storage (server). Generally, the client handles the user experience, and the server handles the data processing and logic.
 - In a REST API design, client and server programs must be independent. 
 - The client software should only know the URI of the requested resource. It should have no additional interaction with the server application.
-
-### 2. Uniform Interface
-- RESTful APIs use a consistent and standard interface to interact with resources, making the API easy to understand and use. 
-- The uniform interface is typically based on standard HTTP methods like GET, POST, PUT, DELETE, etc.
-- All API requests for the same resource should look the same regardless of where they come from. 
 
 ### 3. Statelessness
 - Each request from a client to the server must contain all the necessary information needed to understand and process the request. 
