@@ -19,7 +19,7 @@ A content delivery network relies on three types of servers:
 - <b><i>1. Reduce Latency:</i></b> Some content delivery networks alleviate latency by reducing the physical distance that the content needs to travel to reach you. Therefore, larger and more widely distributed CDNs are able to deliver website content more quickly and reliably by putting the content as close to the end user as possible.
 - <b><i>2. Balance loads:</i></b> A CDN balances overall traffic to give everyone accessing internet content the best web experience possible. Think about it like routing traffic in the real world. There may be one route that’s usually the fastest from point A to point B if no other cars take it — but if it starts getting congested, it’s better for everyone if the traffic gets spread out over a few different routes. That may mean that you get sent on a roadway that’s a few minutes longer (or milliseconds, when scaled to internet speeds), but you don’t get stuck in the traffic jam that’s forming on the shortest route. Load balancing enables content providers to handle increases in demand and large traffic spikes while still providing high-quality user experiences and avoiding downtime.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/how-cdn-work.png" alt="Image" style="display:block; width:85%; height:auto; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/how-cdn-work.png" alt="Image" style="display:block; margin:auto;">
 </div>
 
 <br><br>
