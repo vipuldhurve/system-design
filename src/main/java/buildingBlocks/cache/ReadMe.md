@@ -10,11 +10,11 @@ A cache is a <b><i>high-speed storage</i></b> that stores a small proportion of 
 <br><br>
 ## How caching works?
 - <b><i>Cache Hit:</i></b> If the requested data is found in cache, it is returned directly.
-- <b><i>Cache Hit:</i></b> If the requested data is not found in cache, it is retrieved from the source database, stored in the cache, and then returned.
+- <b><i>Cache Miss:</i></b> If the requested data is not found in cache, it is retrieved from the source database, stored in the cache, and then returned.
 
 **Note:** We always try to optimize cache for high cache hits and low cache miss.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/cache-working.png" alt="Image" style="display:block; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/cache-working.png" alt="Image" style="display:block; margin:auto;">
 </div> 
 
 ### Real Life Examples of Caching
@@ -89,7 +89,7 @@ So read-through strategy simplifies the application code by abstracting away the
  
 **UseCase:** Read heavy applications, with infrequent writes.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/write-through-cache-strategy.png" alt="Image" style="display:block; width:50%; height:auto; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/write-through-cache-strategy.png" alt="Image" style="display:block; width:50%; height:auto; margin:auto;">
 </div> 
 
 #### Disadvantages of Write-through
@@ -112,7 +112,7 @@ So read-through strategy simplifies the application code by abstracting away the
 
 **Use Case:** Write heavy applications
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/write-back-cache-strategy.png" alt="Image" style="display:block; width:70%; height:auto; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/write-back-cache-strategy.png" alt="Image" style="display:block; width:70%; height:auto; margin:auto;">
 </div> 
 
 <br><br>
