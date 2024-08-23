@@ -32,7 +32,7 @@
 - <b><i>Management overhead:</i></b> Need proper management between teams and services.
 
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/monolith%20vs%20microservices.png" alt="Image" style="display:block; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/monolith%20vs%20microservices.png" alt="Image" style="display:block; margin:auto;">
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">Monolith v/s Microservices</p>
 </div>
 
