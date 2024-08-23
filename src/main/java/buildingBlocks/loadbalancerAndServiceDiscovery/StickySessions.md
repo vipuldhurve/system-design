@@ -13,12 +13,12 @@
 ## How are Sticky Sessions Implemented?
 Implementing sticky sessions involves configuring the load balancer to use a mechanism such as session affinity or cookie-based routing. Here's a brief overview of these methods:
 
-### Session Affinity
+### 1. Session Affinity
 - Also known as "IP Hash" or "Source IP Affinity"
 - this method uses the client's IP address to determine which server instance should handle their requests. 
 - The load balancer hashes the client's IP address and consistently routes their requests to the same server based on the hash value.
 
-### Cookie-based Routing
+### 2. Cookie-based Routing
 - In this approach, the load balancer sets a cookie in the user's browser after their initial request. 
 - The cookie contains information identifying the server instance handling the session. 
 - Subsequent requests from the same user include this cookie, allowing the load balancer to route them to the appropriate server.
