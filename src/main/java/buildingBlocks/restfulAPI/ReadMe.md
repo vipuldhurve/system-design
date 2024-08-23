@@ -1,11 +1,11 @@
-# REST API
+# RESTful API
 
 ### What is an API?
 An <b><i>API(Application Programming interface)</i></b> is a set of rules and protocols that allows different software applications to communicate with each other. An API defines the methods and data formats that applications can use to request and exchange information.
 
 <br><br>
-## What is a REST API?
-<b><i>REST(Representational State Transfer)</i></b> is an architectural style i.e. an API that adheres to the REST principles. It allows for communication between a client and a server over HTTP protocol, using HTTPS methods(such as GET, POST, OUT, DELETE) to perform CRUD operations on a resource.
+## REST API
+<b><i>REST(Representational State Transfer)</i></b> API is an architectural style i.e. an API that adheres to the REST principles. It allows for communication between a client and a server over HTTP protocol, using HTTPS methods(such as GET, POST, OUT, DELETE) to perform CRUD operations on a resource.
 - The key abstraction is a <b><i>resource</i></b>. Everything in REST is treated as a resource.
 - Resources are typically identified by <b><i>URIs (Uniform Resource Identifiers)</b></i>, such as `/users/123` for accessing a user resource with ID 123.
 - Resources are represented in different formats, with JSON being the most common format for RESTful APIs
