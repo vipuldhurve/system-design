@@ -62,7 +62,7 @@ We need a distribution scheme that does not depend directly on the number of ser
 - <b><i>Key Placement:</i></b> Similarly keys are hashed and placed on the circular hash ring.
 - <b><i>Key Assignment:</i></b> Each key is assigned to the server closest to it on the circular hash ring in counter-clockwise (or clockwise direction as per the implementation).
 
-**For our example we’ll assume all three servers(A,B,C) have an equal weight of 10:**
+**For our example we’ll assume all three servers -> A,B,C:**
 
 <div align="center">
   <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/hash-ring-key-assignment-consistent-hashing.jpg" alt="Image" style="display:block; margin:auto;">
@@ -94,6 +94,9 @@ To further balance the distribution and reduce the impact of adding or removing 
 
 - <b><i>Virtual Nodes:</b></i> Each physical server is represented by multiple virtual nodes on the hash ring. These virtual nodes are distributed evenly across the ring.
 - <b><i>Adding/Removing Servers:</b></i> When adding or removing a server, it is done by adding or removing its corresponding virtual nodes, which smooths out the distribution and minimizes disruption even more.
+
+**For our example we’ll assume all three servers(A,B,C) have an equal weight of 10: i.e. nodes 0-9 for each**
+
 <div align="center">
   <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/hash-ring-virtual-nodes-consistent-hashing.jpg" alt="Image" style="display:block; margin:auto;">
 </div> 
