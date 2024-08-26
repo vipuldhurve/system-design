@@ -2,7 +2,7 @@
 Indexing in DBMS is a technique that uses data structures to optimize the searching time of a database query. It helps in faster query results and quick data retrieval from the database. Indexing makes database performance better. It also consumes lesser space in the main memory.
 
 ## What is Indexing in DBMS?
-- Indexing as a technique that uses data structures to optimize the searching time of a database query in DBMS. Indexing reduces the number of disks required to access a particular data by internally creating an index table.
+- Indexing is a technique that uses data structures to optimize the searching time of a database query in DBMS. Indexing reduces the number of disks required to access a particular data by internally creating an index table.
 - Indexing is achieved by creating <b><i>Index-table</i></b> or <b><i>Index</i></b>.
 - Index table contains two columns namely <b><i>Search Key</i></b> and <b><i>Data Pointer</i></b> or <b><i>Data Reference</i></b>.
 - Index usually consists of two columns which are a key-value pair. The two columns of the index table(i.e., the key-value pair) contain copies of selected columns of the tabular data of the database.
@@ -44,7 +44,7 @@ The B-tree representation will be like this:
 </div>
 
 #### Ascending and Descending
-As we have discussed above, columns of the index are stored in some sorted manner. Generally, we store these Search Keys in ascending order. These sorted keys allow us to search data the data fastly. We can change the sort order from ascending to descending or something different according to the most frequent queries on the database.
+As we have discussed above, columns of the index are stored in some sorted manner. Generally, we store these Search Keys in ascending order. These sorted keys allow us to search the data fast. We can change the sort order from ascending to descending or something different according to the most frequent queries on the database.
 
 
 Let's see the syntax to store indexing in descending order-
