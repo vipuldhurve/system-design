@@ -168,6 +168,5 @@ Uses multiple caching servers spread across a network to scale beyond the memory
 - <b><i>Initial Cache Warm-up:</i></b> Can cause temporary performance degradation.
 - <b><i>Limited Write Performance:</i></b> Most caching strategies do not improve write performance.
 
-
 <br><br>
 #### #Resource: [www.enjoyalgorithms.com/blog/caching-system-design-concept](https://www.enjoyalgorithms.com/blog/caching-system-design-concept/)
