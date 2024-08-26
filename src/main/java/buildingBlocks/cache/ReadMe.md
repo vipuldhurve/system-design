@@ -158,8 +158,8 @@ Uses multiple caching servers spread across a network to scale beyond the memory
 - <b><i>Faster Access:</i></b> Reduces the need to retrieve data from slower data sources.
 - <b><i>Increased Throughput:</i></b> Provides much higher request rates compared to the main database.
 - <b><i>Scalability:</i></b> Improves scalability by offloading backend databases.
-- <b><i>Scalability:</i></b> Reduces overall system cost by offloading backend databases.
-- <b><i>Scalability:</i></b> Allows access to data even when the network connection is unreliable or offline.
+- <b><i>Reduces Overall Cost:</i></b> Reduces overall system cost by offloading backend databases.
+- <b><i>Continuous Data Access:</i></b> Allows access to data even when the network connection is unreliable or offline.
   
 <br><br>
 ## Disadvantages and Limitations of Caching
