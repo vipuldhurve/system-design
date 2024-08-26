@@ -6,7 +6,7 @@ One such type of system, <b><i>distributed caches</i></b> that power many high-t
 <br><br>
 ## What is Hashing?
 Hashing is a concept which uses a hash function that maps 
-- one piece of data - typically describing some kind of object, often of arbitrary size).
+- one piece of data - typically describing some kind of object, often of arbitrary size.
 - to another piece of data - typically an integer in finite range, known as <b><i>hash code or hash</b></i>.
 
 Since there are way more possible inputs than the finite range of output hash codes, different inputs can be mapped to same hash code, a phenomenon called <b><i>Hashing collisions</b></i>.
