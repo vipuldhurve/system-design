@@ -150,7 +150,7 @@ Uses multiple caching servers spread across a network to scale beyond the memory
 - scalability
 - increased availability
 - better fault tolerance
-- 
+
 **Use Case:** Large scale applications
 
 <br><br>
