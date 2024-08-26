@@ -5,12 +5,9 @@ Indexing in DBMS is a technique that uses data structures to optimize the search
 - Indexing as a technique that uses data structures to optimize the searching time of a database query in DBMS. Indexing reduces the number of disks required to access a particular data by internally creating an index table.
 - Indexing is achieved by creating <b><i>Index-table</i></b> or <b><i>Index</i></b>.
 - Index table contains two columns namely <b><i>Search Key</i></b> and <b><i>Data Pointer</i></b> or <b><i>Data Reference</i></b>.
-- 
-
-
-Index usually consists of two columns which are a key-value pair. The two columns of the index table(i.e., the key-value pair) contain copies of selected columns of the tabular data of the database.
+- Index usually consists of two columns which are a key-value pair. The two columns of the index table(i.e., the key-value pair) contain copies of selected columns of the tabular data of the database.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/structure-of-index-in-database.webp" alt="Image" style="display:block; width:60%; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/structure-of-index-in-database.webp" alt="Image" style="display:block; width:60%; margin:auto;">
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">This diagram illustrates the structure of an index in rdbms</p>
 </div>
 
@@ -43,7 +40,7 @@ Example - We want to store this three-column table in the database.
 
 The B-tree representation will be like this:
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/b-tree-representation-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/b-tree-representation-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
 </div>
 
 #### Ascending and Descending
@@ -75,7 +72,7 @@ We can create a single-column index table or multi-column index table. Concatena
 
 Example - Let us take an example of a multi-column index table:
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/multi-column-index-table.webp" alt="Image" style="display:block; width:60%; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/multi-column-index-table.webp" alt="Image" style="display:block; width:60%; margin:auto;">
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">This diagram illustrates multi-column index table</p>
 </div>
 
@@ -92,7 +89,7 @@ Example - Suppose we have a table namely a student table. If the student table i
 ## Types of Indexes
 According to the attributes defined above, we divide indexing into three types:
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/indexing-types.webp" alt="Image" style="display:block; width:60%; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/indexing-types.webp" alt="Image" style="display:block; width:60%; margin:auto;">
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">This diagram illustrates indexing types</p>
 </div>
 
@@ -103,7 +100,7 @@ Single Level Indexing is further divided into three categories:
 #### 1. Primary Indexing
 The indexing or the index table created using Primary keys is known as Primary Indexing. It is defined on ordered data. As the index is comprised of primary keys, they are unique, not null, and possess one to one relationship with the data blocks.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/primary-indexing-in-single-level-indexing.webp" alt="Image" style="display:block; width:50%; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/primary-indexing-in-single-level-indexing.webp" alt="Image" style="display:block; width:50%; margin:auto;">
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">Primary Indexing</p>
 </div>
 
@@ -117,7 +114,7 @@ Characteristics of Primary Indexing:
 #### 2. Secondary Indexing
 It is a two-level indexing technique used to reduce the mapping size of the primary index. The secondary index points to a certain location where the data is to be found but the actual data is not sorted like in the primary indexing. Secondary Indexing is also known as <b><i>Non-clustered Indexing</i></b>.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/secondary-indexing-in-single-level-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/secondary-indexing-in-single-level-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">Secondary Indexing</p>
 </div>
 
@@ -132,7 +129,7 @@ Characteristics of Secondary Indexing:
 Clustered Indexing is used when there are multiple related records found at one place. It is defined on ordered data. The important thing to note here is that the index table of clustered indexing is created using non-key values which may or may not be unique. To achieve faster retrieval, we group columns having similar characteristics. The indexes are created using these groups and this process is known as <b><i>Clustering Index</i></b>.
 cluster-indexing-in-single-level-indexing
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/clustered-indexing-in-single-level-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/clustered-indexing-in-single-level-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">Clustered Indexing</p>
 </div>
 
@@ -151,21 +148,21 @@ Ordered Indexing is further divided into two categories:
 #### 1. Dense Indexing
 In dense indexing, the index table contains records for every search key value of the database. This makes searching faster but requires a lot more space. It is like primary indexing but contains a record for every search key.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/dense-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/dense-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">Dense Indexing</p>
 </div>
 
 #### 2. Sparse Indexing
 Sparse indexing consumes lesser space than dense indexing, but it is a bit slower as well. We do not include a search key for every record despite that we store a Search key that points to a block. The pointed block further contains a group of data. Sometimes we have to perform double searching this makes sparse indexing a bit slower.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/sparse-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/sparse-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">Sparse Indexing</p>
 </div>
 
 ### Multi-Level Indexing
 Since the index table is stored in the main memory, single-level indexing for a huge amount of data requires a lot of memory space. Hence, multilevel indexing was introduced in which we divide the main data block into smaller blocks. This makes the outer block of the index table small enough to be stored in the main memory.
 <div align="center">
-  <img src="https://github.com/vipuldhurve/Code/blob/main/assets/multi-level-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
+  <img src="https://github.com/vipuldhurve/system-design/blob/main/assets/multi-level-indexing.webp" alt="Image" style="display:block; width:60%; margin:auto;">
   <p style="position:absolute; bottom:0; text-align:center; width:100%;">Multi-level Indexing</p>
 </div>
 We use the B+ Tree data structure for multilevel indexing. The leaf nodes of the B+ tree contain the actual data pointers. The leaf nodes are themselves in the form of a linked list. This linked list representation helps in both sequential and random access.
